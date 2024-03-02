@@ -13,7 +13,7 @@ pipeline {
         stage('Build'){
             steps{
                 echo 'Build Code'
-                sh 'docker build . -t node-todo-app'
+                sh "docker build . -t node-todo-app"
             }
         }
         stage('Push'){
