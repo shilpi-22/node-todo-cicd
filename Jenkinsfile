@@ -33,6 +33,7 @@ pipeline {
             steps{
                 echo 'Deploy code'
                 sh "docker run -d -p 8000:8000 node-todo-app:latest"
+                
             }
         }
     }
