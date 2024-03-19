@@ -19,7 +19,7 @@ describe( "Test1", () => {
 	});
 	
 	it("Is returning 6 when adding 3 + 3", () => {
-	assert.equal(2 + 3, 5);
+	assert.equal(3 + 3, 6);
 	});
 
 	it("Is returning 6 when multiplying 2 * 3", () => {
