@@ -29,6 +29,7 @@ pipeline {
 
         stage("deploy") {
             steps {
+                sh "docker-compose down" //put down the running containers
                 sh "docker-compose up -d" // Make sure docker-compose is installed and config is correct
                 echo "Node-app deployment successful"
             }
