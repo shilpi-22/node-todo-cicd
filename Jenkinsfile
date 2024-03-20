@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     stages {
-        stage('Code') {
+        stage("Code") {
             steps {
                 git url: "https://github.com/shilpi-22/node-todo-cicd.git", branch: "master"
                 echo "Code clone successful"
             }
         }
-          stage('Build') {
+          stage("Build") {
             steps {
                 sh "docker build . -t node-todo-cicd"
                 echo "Code Build successful"
